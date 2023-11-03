@@ -31,5 +31,4 @@ class MainTest {
         assertTrue(Main.camelCaseMe(three).equals("TheStealthWarrior"));
         assertTrue(Main.camelCaseMe(four).equals("NoShotBruh"));
     }
-
 }
