@@ -48,7 +48,9 @@ public class Main {
         for (int i = 0; i<result.length();i++) {
             if ((result.charAt(i) == '_') || (result.charAt(i) == '-')) {
                 if (i == 0) {
-                    result = result.substring(i + 1);
+                    difference++;
+                    String UpperCase = str.substring(i + 1+difference, i + 2+difference);
+                    result = UpperCase.toUpperCase()+result.substring(i + 2);
                 } else if (i == result.length() - 1) {
                     result = result.substring(0, result.length() - 1);
                 } else {
@@ -58,6 +60,7 @@ public class Main {
                 }
             }
         }
+        System.out.println(result);
         return result;
     }
 }
